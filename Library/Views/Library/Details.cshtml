@@ -1,0 +1,52 @@
+﻿@model Library.Models.LibraryModel
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = null;
+}
+
+<div class="col-md-12">
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BookName)
+        </dt>
+        <dd class="col-sm-12">
+            @Html.DisplayFor(model => model.BookName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Author)
+        </dt>
+        <dd class="col-sm-12">
+            @Html.DisplayFor(model => model.Author)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Pages)
+        </dt>
+        <dd class="col-sm-12">
+            @Html.DisplayFor(model => model.Pages)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Read)
+        </dt>
+        <dd class="col-sm-12">
+            @Html.DisplayFor(model => model.Read)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Rating)
+        </dt>
+        <dd class="col-sm-12">
+            @Html.DisplayFor(model => model.Rating)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+        <dd class="col-sm-12">
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+    </dl>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
